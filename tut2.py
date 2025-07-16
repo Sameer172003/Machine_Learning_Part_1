@@ -18,7 +18,7 @@ print(dataset.drop(columns="Email",inplace=True))
 print()
 print(dataset.shape)
 
-# If we want to delete the data of a all rows which have missing values
+# If we want to delete the data of all rows which have missing values
 
 print(dataset.dropna(inplace=True))
 print(dataset.isnull().sum())

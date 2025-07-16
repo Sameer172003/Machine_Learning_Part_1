@@ -18,6 +18,6 @@ print((dataset.isnull().sum().sum()/(dataset.shape[0]*dataset.shape[1]))*100)
 print()
 print((dataset.isnull().sum()/(dataset.shape[0]))*100)
 
-# sns.heatmap(dataset.isnull())
+sns.heatmap(dataset.isnull())
 
-# plt.show()
+plt.show()
