@@ -5,6 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 dataset=dataset=pd.read_csv("C:\\Users\\ojhas\\Dropbox\\PC\\Downloads\\test_data.csv")
+dataset["Age"].fillna(dataset["Age"].mode()[0])
 
 q1=dataset["Age"].quantile(0.25)
 q3=dataset["Age"].quantile(0.75)
